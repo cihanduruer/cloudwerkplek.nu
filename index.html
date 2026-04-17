@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Werkplek Help - Aule.nl</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-icon">☁️</span>
+                <div>
+                    <span class="logo-text">Cloud Werkplek</span>
+                    <span class="logo-sub">Helpcentrum — Aule.nl</span>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#avd" class="nav-link" data-section="avd">Werkplek</a>
+                <a href="#teams" class="nav-link" data-section="teams">Teams</a>
+                <a href="#office" class="nav-link" data-section="office">Office 365</a>
+                <a href="#sharepoint" class="nav-link" data-section="sharepoint">SharePoint</a>
+                <a href="#faq" class="nav-link" data-section="faq">Veelgestelde vragen</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero / Home -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welkom bij het Cloud Werkplek Helpcentrum</h1>
+            <p class="hero-sub">Hier vindt u handleidingen en tips om het beste uit uw Cloud Werkplek te halen.</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Zoek in de handleidingen..." aria-label="Zoeken">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="cards">
+                <a href="#avd" class="card" data-nav="avd">
+                    <div class="card-icon">🖥️</div>
+                    <h3>Cloud Werkplek</h3>
+                    <p>Inloggen en werken op uw virtuele bureaublad</p>
+                </a>
+                <a href="#teams" class="card" data-nav="teams">
+                    <div class="card-icon">💬</div>
+                    <h3>Microsoft Teams</h3>
+                    <p>Vergaderen, chatten en samenwerken</p>
+                </a>
+                <a href="#office" class="card" data-nav="office">
+                    <div class="card-icon">📄</div>
+                    <h3>Office 365</h3>
+                    <p>Word, Excel, PowerPoint en Outlook</p>
+                </a>
+                <a href="#sharepoint" class="card" data-nav="sharepoint">
+                    <div class="card-icon">📁</div>
+                    <h3>SharePoint</h3>
+                    <p>Documenten delen en samenwerken</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Azure Virtual Desktop -->
+    <section id="avd" class="content-section hidden">
+        <div class="container">
+            <h2>🖥️ Cloud Werkplek (Azure Virtual Desktop)</h2>
+            <p class="section-intro">Uw Cloud Werkplek is een veilige virtuele desktop die u overal kunt gebruiken. Hieronder vindt u stap-voor-stap uitleg.</p>
+
+            <div class="guide-block" id="avd-inloggen">
+                <h3>Inloggen op uw Cloud Werkplek</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Open de webbrowser</h4>
+                            <p>Ga naar <a href="https://client.wvd.microsoft.com/arm/webclient" target="_blank" rel="noopener">https://client.wvd.microsoft.com/arm/webclient</a></p>
+                            <div class="tip">💡 Tip: Sla deze link op als favoriet/bladwijzer in uw browser.</div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Log in met uw account</h4>
+                            <p>Voer uw e-mailadres en wachtwoord in. Dit zijn dezelfde gegevens als voor uw werkmail.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Bevestig met MFA</h4>
+                            <p>Bevestig de aanmelding met de Microsoft Authenticator app op uw telefoon of via een SMS-code.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>Klik op uw bureaublad</h4>
+                            <p>U ziet nu uw Cloud Werkplek. Dubbelklik erop om verbinding te maken. Na enkele seconden verschijnt uw bureaublad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="avd-app">
+                <h3>De Remote Desktop App installeren (aanbevolen)</h3>
+                <p>Voor de beste ervaring raden wij de Remote Desktop app aan:</p>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Download de app</h4>
+                            <p><strong>Windows:</strong> Download de <a href="https://go.microsoft.com/fwlink/?linkid=2139369" target="_blank" rel="noopener">Windows Desktop Client</a> uit de Microsoft Store of website.</p>
+                            <p><strong>Mac:</strong> Download <a href="https://apps.apple.com/app/windows-app/id1295203466" target="_blank" rel="noopener">Windows App</a> uit de App Store.</p>
+                            <p><strong>Telefoon/Tablet:</strong> Zoek naar "Windows App" in de App Store of Google Play Store.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Abonneren</h4>
+                            <p>Open de app en klik op <strong>Abonneren</strong> (of Subscribe). Log in met uw werkaccount.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Verbinding maken</h4>
+                            <p>Na het inloggen verschijnt uw Cloud Werkplek. Dubbelklik erop om te starten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="avd-tips">
+                <h3>Tips voor de Cloud Werkplek</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>🔄 Scherm aanpassen</h4>
+                        <p>Gebruik <kbd>Ctrl</kbd> + <kbd>+</kbd> of <kbd>Ctrl</kbd> + <kbd>-</kbd> om in/uit te zoomen in de webclient.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>📋 Kopiëren & Plakken</h4>
+                        <p>Kopiëren en plakken werkt gewoon met <kbd>Ctrl+C</kbd> en <kbd>Ctrl+V</kbd> tussen uw computer en de Cloud Werkplek.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>🖨️ Printen</h4>
+                        <p>Uw lokale printers zijn automatisch beschikbaar in de Cloud Werkplek.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>💾 Bestanden opslaan</h4>
+                        <p>Sla bestanden altijd op in OneDrive of SharePoint, zo zijn ze altijd veilig en beschikbaar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="avd-problemen">
+                <h3>Veelvoorkomende problemen</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Ik kan niet inloggen</button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Controleer of u het juiste e-mailadres en wachtwoord gebruikt</li>
+                                <li>Controleer of de Caps Lock toets niet per ongeluk aan staat</li>
+                                <li>Probeer uw wachtwoord te resetten via <a href="https://passwordreset.microsoftonline.com" target="_blank" rel="noopener">passwordreset.microsoftonline.com</a></li>
+                                <li>Lukt het nog niet? Neem contact op met de helpdesk</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Het scherm is traag of bevriest</button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Controleer uw internetverbinding</li>
+                                <li>Sluit onnodige tabbladen en programma's</li>
+                                <li>Gebruik bij voorkeur een bekabelde internetverbinding (ethernet)</li>
+                                <li>Probeer de Remote Desktop app in plaats van de webbrowser</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Mijn printer werkt niet</button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Controleer of de printer aan staat en verbonden is met uw computer</li>
+                                <li>Log uit en weer in op de Cloud Werkplek</li>
+                                <li>Controleer of de printer verschijnt in de lijst met printers</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Microsoft Teams -->
+    <section id="teams" class="content-section hidden">
+        <div class="container">
+            <h2>💬 Microsoft Teams</h2>
+            <p class="section-intro">Microsoft Teams is uw centrale plek voor communicatie en samenwerking. Hieronder vindt u uitleg over de belangrijkste functies.</p>
+
+            <div class="guide-block" id="teams-starten">
+                <h3>Teams starten</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Open Teams</h4>
+                            <p>Teams is al geïnstalleerd op uw Cloud Werkplek. Klik op het <strong>Teams-icoon</strong> in de taakbalk of zoek "Teams" in het startmenu.</p>
+                            <p>U kunt ook Teams gebruiken in de browser via <a href="https://teams.microsoft.com" target="_blank" rel="noopener">teams.microsoft.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="teams-chatten">
+                <h3>Chatten met collega's</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Nieuwe chat starten</h4>
+                            <p>Klik op <strong>Chat</strong> in de linkerkolom en vervolgens op het <strong>✏️ nieuwe chat</strong> icoon bovenaan.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Persoon zoeken</h4>
+                            <p>Typ de naam of het e-mailadres van uw collega in het <strong>"Aan:"</strong> veld.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Bericht typen</h4>
+                            <p>Typ uw bericht onderaan en druk op <kbd>Enter</kbd> om te verzenden.</p>
+                            <div class="tip">💡 Tip: Gebruik <kbd>Shift+Enter</kbd> voor een nieuwe regel zonder te verzenden.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="teams-vergaderen">
+                <h3>Een vergadering starten of deelnemen</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Deelnemen aan een vergadering</h4>
+                            <p>Klik op de <strong>vergaderlink</strong> in uw agenda (Outlook) of in Teams bij <strong>Agenda</strong> in de linkerkolom. Klik op <strong>Deelnemen</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Camera en microfoon instellen</h4>
+                            <p>Voordat u deelneemt kunt u uw camera en microfoon aan- of uitzetten. Klik daarna op <strong>"Nu deelnemen"</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Scherm delen</h4>
+                            <p>Klik tijdens een vergadering op het <strong>🖥️ deelicoon</strong> (rechtsboven) en kies welk scherm of venster u wilt delen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">💡 Tip: Test uw geluid vóór de vergadering via <strong>Instellingen → Apparaten</strong>.</div>
+            </div>
+
+            <div class="guide-block" id="teams-bestanden">
+                <h3>Bestanden delen in Teams</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>In een chat</h4>
+                            <p>Klik op het <strong>📎 paperclip-icoon</strong> onder het berichtveld. Kies het bestand en klik op <strong>Verzenden</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>In een kanaal</h4>
+                            <p>Ga naar het kanaal, klik op <strong>Bestanden</strong> bovenaan. Klik op <strong>Uploaden</strong> of sleep het bestand erin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office 365 -->
+    <section id="office" class="content-section hidden">
+        <div class="container">
+            <h2>📄 Office 365</h2>
+            <p class="section-intro">Met Office 365 heeft u altijd toegang tot Word, Excel, PowerPoint, Outlook en meer. Hier vindt u handige tips.</p>
+
+            <div class="guide-block" id="office-outlook">
+                <h3>📧 Outlook — E-mail en Agenda</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Outlook openen</h4>
+                            <p>Open Outlook vanuit de Cloud Werkplek (taakbalk of startmenu) of ga naar <a href="https://outlook.office.com" target="_blank" rel="noopener">outlook.office.com</a> in uw browser.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>E-mail versturen</h4>
+                            <p>Klik op <strong>Nieuwe e-mail</strong>. Vul het e-mailadres, onderwerp en bericht in. Klik op <strong>Verzenden</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Bijlage toevoegen</h4>
+                            <p>Klik op <strong>📎 Bijvoegen</strong> en kies het bestand. U kunt ook bestanden vanuit OneDrive of SharePoint delen als link.</p>
+                            <div class="tip">💡 Tip: Bestanden delen als link is beter dan als bijlage — zo werkt iedereen altijd in de laatste versie.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 style="margin-top: 1.5rem;">Handige sneltoetsen in Outlook</h4>
+                <table class="shortcut-table">
+                    <thead><tr><th>Actie</th><th>Sneltoets</th></tr></thead>
+                    <tbody>
+                        <tr><td>Nieuwe e-mail</td><td><kbd>Ctrl+N</kbd></td></tr>
+                        <tr><td>Beantwoorden</td><td><kbd>Ctrl+R</kbd></td></tr>
+                        <tr><td>Allen beantwoorden</td><td><kbd>Ctrl+Shift+R</kbd></td></tr>
+                        <tr><td>Doorsturen</td><td><kbd>Ctrl+F</kbd></td></tr>
+                        <tr><td>Verzenden</td><td><kbd>Ctrl+Enter</kbd></td></tr>
+                        <tr><td>Zoeken</td><td><kbd>Ctrl+E</kbd></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="guide-block" id="office-word">
+                <h3>📝 Word — Documenten maken</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>📄 Nieuw document</h4>
+                        <p>Open Word → Klik op <strong>Leeg document</strong> of kies een sjabloon.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>💾 Opslaan</h4>
+                        <p>Druk op <kbd>Ctrl+S</kbd> of sla op in OneDrive voor automatisch opslaan.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>🖨️ Afdrukken</h4>
+                        <p>Gebruik <kbd>Ctrl+P</kbd> om het afdrukvenster te openen.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>📤 Exporteren als PDF</h4>
+                        <p>Ga naar <strong>Bestand → Exporteren → PDF maken</strong>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="office-excel">
+                <h3>📊 Excel — Spreadsheets</h3>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h4>➕ Basis formules</h4>
+                        <p><code>=SOM(A1:A10)</code> voor optellen.<br><code>=GEMIDDELDE(A1:A10)</code> voor gemiddelde.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>📊 Grafiek maken</h4>
+                        <p>Selecteer uw gegevens → tabblad <strong>Invoegen</strong> → kies een grafiektype.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>🔍 Filteren</h4>
+                        <p>Selecteer uw tabel → <strong>Gegevens → Filter</strong> om te sorteren en filteren.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h4>🧊 Rijen vastzetten</h4>
+                        <p><strong>Beeld → Titels blokkeren</strong> om koprijen zichtbaar te houden bij scrollen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="office-onedrive">
+                <h3>☁️ OneDrive — Uw persoonlijke opslag</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Bestanden openen</h4>
+                            <p>Klik op het <strong>OneDrive wolkje</strong> in de taakbalk of ga naar <a href="https://onedrive.com" target="_blank" rel="noopener">onedrive.com</a>.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Bestanden uploaden</h4>
+                            <p>Sleep bestanden naar het OneDrive venster of klik op <strong>Uploaden</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Delen met collega's</h4>
+                            <p>Klik met de rechtermuisknop op een bestand → <strong>Delen</strong> → voer het e-mailadres in.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tip">💡 Tip: OneDrive is voor persoonlijke bestanden. Gebruik SharePoint voor teambestanden.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SharePoint -->
+    <section id="sharepoint" class="content-section hidden">
+        <div class="container">
+            <h2>📁 SharePoint</h2>
+            <p class="section-intro">SharePoint is de plek waar uw team documenten deelt en samen aan bestanden werkt.</p>
+
+            <div class="guide-block" id="sp-openen">
+                <h3>SharePoint openen</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Via de browser</h4>
+                            <p>Ga naar <a href="https://portal.office.com" target="_blank" rel="noopener">portal.office.com</a> en klik op <strong>SharePoint</strong> in het app-overzicht.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Uw sites vinden</h4>
+                            <p>U ziet uw <strong>veelgebruikte sites</strong> en <strong>recente bestanden</strong>. Klik op een site om deze te openen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="sp-documenten">
+                <h3>Werken met documenten</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Document uploaden</h4>
+                            <p>Open een documentbibliotheek → klik op <strong>Uploaden</strong> of sleep bestanden naar het venster.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Document bewerken</h4>
+                            <p>Klik op een document om het te openen. U kunt kiezen om het te bewerken in de <strong>browser</strong> of in de <strong>desktop-app</strong>.</p>
+                            <div class="tip">💡 Tip: Meerdere mensen kunnen tegelijk aan hetzelfde document werken!</div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Versiegeschiedenis bekijken</h4>
+                            <p>Klik met rechts op een bestand → <strong>Versiegeschiedenis</strong>. Hier kunt u eerdere versies bekijken of herstellen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="sp-delen">
+                <h3>Bestanden delen</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Bestand delen</h4>
+                            <p>Klik met rechts op het bestand → <strong>Delen</strong>. Voer de naam of het e-mailadres in van de persoon.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Rechten instellen</h4>
+                            <p>Kies of de persoon het bestand mag <strong>bewerken</strong> of alleen <strong>bekijken</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Link kopiëren</h4>
+                            <p>Klik op <strong>Link kopiëren</strong> om een deellink te maken die u via e-mail of chat kunt versturen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-block" id="sp-sync">
+                <h3>SharePoint synchroniseren met uw computer</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Synchronisatie starten</h4>
+                            <p>Open de SharePoint-site in uw browser. Klik op <strong>Synchroniseren</strong> in de documentbibliotheek.</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>OneDrive opent automatisch</h4>
+                            <p>De map verschijnt in uw Verkenner onder de naam van uw organisatie. U kunt nu bestanden bewerken alsof ze op uw computer staan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="content-section hidden">
+        <div class="container">
+            <h2>❓ Veelgestelde vragen</h2>
+            <p class="section-intro">Antwoorden op de meest gestelde vragen over uw Cloud Werkplek.</p>
+
+            <div class="guide-block">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Hoe wijzig ik mijn wachtwoord?</button>
+                        <div class="accordion-content">
+                            <ol>
+                                <li>Ga naar <a href="https://myaccount.microsoft.com" target="_blank" rel="noopener">myaccount.microsoft.com</a></li>
+                                <li>Klik op <strong>Wachtwoord wijzigen</strong></li>
+                                <li>Voer uw huidige wachtwoord in en daarna twee keer uw nieuwe wachtwoord</li>
+                                <li>Klik op <strong>Verzenden</strong></li>
+                            </ol>
+                            <div class="tip">💡 Tip: Gebruik een sterk wachtwoord met minimaal 12 tekens, hoofdletters, kleine letters, cijfers en symbolen.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Hoe stel ik de Microsoft Authenticator app in?</button>
+                        <div class="accordion-content">
+                            <ol>
+                                <li>Download de <strong>Microsoft Authenticator</strong> app op uw telefoon (App Store / Google Play)</li>
+                                <li>Ga naar <a href="https://mysignins.microsoft.com/security-info" target="_blank" rel="noopener">mysignins.microsoft.com/security-info</a></li>
+                                <li>Klik op <strong>Methode toevoegen → Authenticator-app</strong></li>
+                                <li>Scan de QR-code met de Authenticator app</li>
+                                <li>Bevestig met de code die op uw telefoon verschijnt</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Kan ik de Cloud Werkplek op mijn telefoon of tablet gebruiken?</button>
+                        <div class="accordion-content">
+                            <p>Ja! Download de <strong>Windows App</strong> (voorheen Remote Desktop) uit de App Store of Google Play Store. Log in met uw werkaccount en u kunt overal werken.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Waar worden mijn bestanden opgeslagen?</button>
+                        <div class="accordion-content">
+                            <p>Uw bestanden worden veilig opgeslagen in de Microsoft Cloud:</p>
+                            <ul>
+                                <li><strong>OneDrive</strong> — voor persoonlijke bestanden</li>
+                                <li><strong>SharePoint</strong> — voor gedeelde teambestanden</li>
+                                <li><strong>Teams</strong> — bestanden gedeeld in chats en kanalen (staan ook in SharePoint)</li>
+                            </ul>
+                            <div class="warning">⚠️ Sla bestanden NIET op het lokale bureaublad van de Cloud Werkplek op. Gebruik altijd OneDrive of SharePoint.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Mijn internetverbinding is langzaam, wat kan ik doen?</button>
+                        <div class="accordion-content">
+                            <ul>
+                                <li>Gebruik een bekabelde verbinding (ethernet) in plaats van WiFi</li>
+                                <li>Sluit ongebruikte programma's en browsertabbladen</li>
+                                <li>Start uw router/modem opnieuw op</li>
+                                <li>Gebruik de Remote Desktop app in plaats van de webbrowser</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Hoe neem ik contact op met de helpdesk?</button>
+                        <div class="accordion-content">
+                            <div class="contact-info">
+                                <p>U kunt onze helpdesk bereiken via:</p>
+                                <ul>
+                                    <li>📧 E-mail: <a href="mailto:support@aule.nl">support@aule.nl</a></li>
+                                    <li>🌐 Website: <a href="https://aule.nl" target="_blank" rel="noopener">aule.nl</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-btn">Hoe log ik uit bij de Cloud Werkplek?</button>
+                        <div class="accordion-content">
+                            <p>Klik op het <strong>Windows startmenu</strong> → klik op uw naam → <strong>Afmelden</strong>. Of sluit simpelweg het browservenster / de app.</p>
+                            <div class="tip">💡 Tip: U hoeft niet altijd uit te loggen. Als u de browser of app sluit, wordt uw sessie automatisch na enige tijd beëindigd.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-icon">☁️</span>
+                    <span>Cloud Werkplek door <a href="https://aule.nl" target="_blank" rel="noopener">Aule.nl</a></span>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:support@aule.nl">support@aule.nl</a>
+                    <span>|</span>
+                    <a href="https://aule.nl" target="_blank" rel="noopener">aule.nl</a>
+                </div>
+            </div>
+            <p class="footer-copy">© 2026 Aule BV. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
